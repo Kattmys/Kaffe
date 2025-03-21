@@ -1,0 +1,15 @@
+h1 {
+	color: blue;
+	text-align: center;
+	border-bottom: 3px solid blue;
+	background-color: brown;
+}
+
+p {
+	color: white;
+	font-size: 20px;
+}
+
+body {
+	background-color: lightpink;
+}
