@@ -1,13 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 h1 {
 	color: blue;
 	text-align: center;
 	border-bottom: 3px solid blue;
 	background-color: brown;
+	margin-bottom: 10px;
 }
 
 p {
-	color: white;
 	font-size: 20px;
+}
+
+p, h2 {
+	margin-left: 10px;
+	color: white;
+}
+
+#s1 {
+	text-align: center;
+	background-color: crimson;
+	margin: 0 60px;
+	padding: 20px 0;
+	margin-top: 20px;
+	border: 3px solid green;
+}
+
+section img {
+	width: 100%;
+}
+
+#s2 {
+	text-align: center;
+	background-color: crimson;
+	margin: 0 60px;
+	padding: 20px 0;
+	margin-top: 20px;
+	border: 3px solid green;
 }
 
 body {
