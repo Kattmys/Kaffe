@@ -1,0 +1,23 @@
+#formulär {
+	display: none;
+}
+
+#formulär, #formulärknapp {
+	position: fixed;
+}
+
+#namnfärg {
+	color: green;
+}
+
+header a {
+	float: left;
+	height: 45px;
+	position: relative;
+	bottom: 4px;
+}
+
+header a img {
+	height: 100%;
+	rotate: 90deg;
+}

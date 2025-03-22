@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %} Kaffe! {% endblock %}
+{% block head_ext %}
+<script src="static/scripts/index.js"></script>
+<link rel="stylesheet" href="static/style/index.css">
+{% endblock %}
+{% block content %}
+
+<header>
+<h1>Kaffe! Snabbt✓ Nyttigt✓ Gott✓</h1>
+</header>
+
+<section id="s1">
+<h2>Pressbyråknep!</h2>
+<p>Get your cup now!</p>
+<img src="static/media/pressbyran-butik.jpg" alt="Bild på butiken Pressbyrån.">
+<p> discordlänk blb bla bla</p>
+</section>
+
+<section id="s2">
+<h2>Bästa kaffet just nu?</h2>
+<p>Fransk press givetvis.</p>
+<img src="static/media/fransk-press.jpg">
+<p>Filtret i en fransk press är inte lika finmaskigt som i ett ordinarie så kaffet beåller mer av sin smak och sina eteriska oljor.</p>
+<a href="http://kaffe.kattmys.se/fransk-press/">Läs mer här</a>
+</section>
+
+<section id="s3">
+<h2>Vilket är ditt favoritkaffe?</h2>
+<p>Har du nåt favoritställe eller kaffesort, metod eller nåt annat du vill dela med dig om angående kaffe så kan du göra ett inlägg här:</p>
+<a href="http://kaffe.kattmys.se/forum/">Forum</a>
+</section>
+
+<section id="s4">
+<img src="static/media/animatedcoffeeduck.png">
+</section>
+
+<section id="s5">
+<div class="bg">
+<img class="rot" src="static/media/java.png" onload="rotate()">
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %} Kaffe! {% endblock %}
+{% block head_ext %}
+<script src="static/scripts/forum.js"></script>
+<link rel="stylesheet" href="static/style/forum.css">
+{% endblock %}
+{% block content %}
+
+<header>
+<a href="http://kaffe.kattmys.se/"><img src="static/media/back3.png"></a>
+<h1>KAFFEFORUM!</h1>
+</header>
+
+<button id="formulärknapp" onclick="clicked()">Skapa inlägg</button>
+
+<br>
+
+<form method="post" id="formulär" action="/forum/submit">
+  <label for="rubrik">Rubrik:</label><br>
+  <input type="text" id="rubrik" name="rubrik"><br>
+  <label for="text">Innehåll:</label><br>
+  <textarea cols=40 rows=5 name="text"></textarea><br><br>
+  <label for="namn">Namn:</label><br>
+  <input type="text" id="namn" name="namn"><br>
+  <input type="submit" value="Skicka">
+</form>
+
+{% for inlägg in data[::-1] %}
+<section>
+<h2>{{ inlägg.rubrik }}</h2>
+<p>{{ inlägg.text }}</p>
+<p id="namnfärg">/{{ inlägg.namn }}</p>
+</section>
+{% endfor %}
+{% endblock %}
