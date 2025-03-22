@@ -21,28 +21,33 @@ p, h2 {
 	color: white;
 }
 
-#s1 {
+section {
 	text-align: center;
 	background-color: crimson;
-	margin: 0 60px;
-	padding: 20px 0;
+	padding: 20px 20px;
 	margin-top: 20px;
 	border: 3px solid green;
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+#s1 {
+}
+
+#s2 {
 }
 
 section img {
 	width: 100%;
-}
-
-#s2 {
-	text-align: center;
-	background-color: crimson;
-	margin: 0 60px;
-	padding: 20px 0;
-	margin-top: 20px;
-	border: 3px solid green;
+	max-width: 600px;
 }
 
 body {
 	background-color: lightpink;
+}
+
+footer {
+	color: lightpink;
+	padding: 2px;
+	background-color: crimson;
 }
