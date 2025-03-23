@@ -28,6 +28,10 @@ def page():
         return flask.render_template(f"forum.html",
             data=[json.loads(line) for line in file.read().splitlines()]
         )
+        
+@app.route("/kaffepress")
+def kaffepress():
+    return flask.render_template("kaffepress.html")
 
 if __name__ == "__main__":
-    app.run(debug=True, host="127.0.0.1", port=5000)
+    app.run(host="127.0.0.1", port=5000)

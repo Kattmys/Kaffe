@@ -16,6 +16,18 @@ header {
 	margin-bottom: 10px;
 }
 
+header a {
+	float: left;
+	height: 45px;
+	position: relative;
+	bottom: 4px;
+}
+
+header a img {
+	height: 100%;
+	rotate: 90deg;
+}
+
 h1 {
 	color: sandybrown;
 	text-align: center;
@@ -68,8 +80,7 @@ body {
 }
 
 footer {
-	position: fixed;
-	left: 0;
+	position: bottom;
     bottom: 0;
     width: 100%;
 	color: sandybrown;
