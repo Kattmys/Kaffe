@@ -60,6 +60,7 @@ section {
 	max-width: 600px;
 	margin: 20px auto;
 	color: lemonchiffon;
+	white-space: pre;
 }
 
 section img {
@@ -80,12 +81,10 @@ body {
 }
 
 footer {
-	position: bottom;
-    bottom: 0;
+	height: 29px;
+	padding-left: 10px;
     width: 100%;
 	color: sandybrown;
 	border-top: 3px solid sandybrown;
-	padding: 2px;
-	padding-left: 10px;
 	background-color: saddlebrown;
 }
