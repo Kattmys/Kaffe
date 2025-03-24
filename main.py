@@ -34,4 +34,5 @@ def kaffepress():
     return flask.render_template("kaffepress.html")
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000)
+    context = ('/etc/letsencrypt/live/kattmys.se/cert.pem', '/etc/letsencrypt/live/kattmys.se/privkey.pem')
+    app.run(host="127.0.0.1", port=5000, ssl_context=context)
