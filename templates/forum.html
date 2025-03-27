@@ -17,11 +17,11 @@
 
 <form method="post" id="formulär" action="/forum/submit">
   <label for="rubrik">Rubrik:</label><br>
-  <input type="text" id="rubrik" name="rubrik" required><br>
+  <input type="text" id="rubrik" name="rubrik" required maxlength="60"><br>
   <label for="text">Innehåll:</label><br>
-  <textarea cols=40 rows=5 name="text" required></textarea><br><br>
+  <textarea cols=40 rows=5 name="text" required maxlength="600"></textarea><br><br>
   <label for="namn">Namn:</label><br>
-  <input type="text" id="namn" name="namn" required><br>
+  <input type="text" id="namn" name="namn" required maxlength="60"><br>
   <input type="submit" value="Skicka">
 </form>
 
