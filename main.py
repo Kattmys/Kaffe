@@ -6,6 +6,8 @@ app = flask.Flask(__name__)
 @app.route("/")
 def home():
     return flask.render_template("index.html")
+
+POSTS = "../Data/Kaffe/forum.json"
  
 @app.route('/forum/submit', methods=['POST'])
 def process_form():
@@ -13,7 +15,7 @@ def process_form():
     text = flask.request.form.get('text')
     namn = flask.request.form.get('namn')
     
-    with open("../Data/Kaffe/forum.json", "a") as file:
+    with open(POSTS, "a") as file:
         file.write(json.dumps({
             "rubrik": rubrik,
             "text": text,
@@ -24,7 +26,7 @@ def process_form():
  
 @app.route("/forum")
 def page():
-    with open("data.json") as file:
+    with open(POSTS) as file:
         return flask.render_template(f"forum.html",
             data=[json.loads(line) for line in file.read().splitlines()]
         )
