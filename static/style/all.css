@@ -63,6 +63,10 @@ section {
 	overflow-wrap: break-word;
 }
 
+section p {
+    white-space: pre-wrap;
+}
+
 section img {
 	width: 100%;
 	max-width: 600px;
