@@ -13,7 +13,7 @@ def process_form():
     text = flask.request.form.get('text')
     namn = flask.request.form.get('namn')
     
-    with open("data.json", "a") as file:
+    with open("../Data/Kaffe/forum.json", "a") as file:
         file.write(json.dumps({
             "rubrik": rubrik,
             "text": text,
