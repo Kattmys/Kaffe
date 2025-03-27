@@ -14,19 +14,19 @@ header {
 	border-bottom: 3px solid sandybrown;
 	background-color: saddlebrown;
 	margin-bottom: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
 }
 
 header a {
-	/* float: left; */
+	float: left;
 	height: 45px;
-	/* position: relative; */
-	/* bottom: 4px; */
-    position: fixed;
-    top: 0;
-    left: 0;
+	position: relative;
+	bottom: 4px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
 }
 
 header a img {
