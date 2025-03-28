@@ -27,6 +27,7 @@
 
 {% for inlägg in data[::-1] %}
 <section>
+<p id="unixfärg">{{ inlägg.klartid }}</p>
 <h2>{{ inlägg.rubrik }}</h2>
 <p>{{ inlägg.text }}</p>
 <p id="namnfärg">/{{ inlägg.namn }}</p>
