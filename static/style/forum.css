@@ -60,3 +60,9 @@
 #namnfärg {
 	color: green;
 }
+
+#klartid {
+	text-align: right;
+	font-size: 6px;
+	color: gray;
+}
