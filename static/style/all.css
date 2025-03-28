@@ -2,7 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	
+
+    font-family: Newsreader;
 }
 
 @font-face {
@@ -10,10 +11,18 @@
 	src: url("../fonts/Anton.ttf");
 }
 
+@font-face {
+	font-family: Newsreader;
+	src: url("../fonts/Newsreader.ttf");
+}
+
 header {
 	border-bottom: 3px solid sandybrown;
 	background-color: saddlebrown;
 	margin-bottom: 10px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
 }
 
 header a {
@@ -21,6 +30,9 @@ header a {
 	height: 45px;
 	position: relative;
 	bottom: 4px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
 }
 
 header a img {

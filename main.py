@@ -1,7 +1,11 @@
 import flask
 import json
+<<<<<<< HEAD
 import time
 from datetime import datetime
+=======
+import os
+>>>>>>> 255f1908b4ba23e7efa4ff4f38dfa6c93a0b379f
 
 app = flask.Flask(__name__)
 
@@ -9,8 +13,7 @@ app = flask.Flask(__name__)
 def home():
     return flask.render_template("index.html")
 
-# POSTS = "../Data/Kaffe/forum.json"
-POSTS = "forum.json"
+POSTS = "../Data/Kaffe/forum.json"
  
 @app.route('/forum/submit', methods=['POST'])
 def process_form():

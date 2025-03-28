@@ -11,18 +11,18 @@
 <h1>KAFFEFORUM!</h1>
 </header>
 
-<button id="formulärknapp" onclick="clicked()">Skapa inlägg</button>
+<button id="formulärknapp" class="knapp" onclick="clicked()">Skapa inlägg</button>
 
 <br>
 
 <form method="post" id="formulär" action="/forum/submit">
-  <label for="rubrik">Rubrik:</label><br>
+  <label for="rubrik">Rubrik</label><br>
   <input type="text" id="rubrik" name="rubrik" required maxlength="60"><br>
-  <label for="text">Innehåll:</label><br>
-  <textarea cols=40 rows=5 name="text" required maxlength="600"></textarea><br><br>
-  <label for="namn">Namn:</label><br>
+  <label for="text">Innehåll</label><br>
+  <textarea cols=40 rows=5 name="text" required maxlength="1200" spellcheck="false"></textarea><br><br>
+  <label for="namn">Namn</label><br>
   <input type="text" id="namn" name="namn" required maxlength="60"><br>
-  <input type="submit" value="Skicka">
+  <input type="submit" value="Skicka" id="skickaknapp" class="knapp">
 </form>
 
 {% for inlägg in data[::-1] %}
