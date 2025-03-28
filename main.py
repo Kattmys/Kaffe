@@ -1,11 +1,8 @@
 import flask
 import json
-<<<<<<< HEAD
 import time
 from datetime import datetime
-=======
 import os
->>>>>>> 255f1908b4ba23e7efa4ff4f38dfa6c93a0b379f
 
 app = flask.Flask(__name__)
 
