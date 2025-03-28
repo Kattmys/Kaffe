@@ -16,6 +16,10 @@
 #formulär label {
     padding: 2px 4px;
     font-weight: bold;
+    border: none;
+    background-color: initial;
+    color: black;
+    text-shadow: 0px 2px 1px #ddd;
 }
 
 #formulär textarea {
