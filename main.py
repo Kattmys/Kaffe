@@ -34,7 +34,8 @@ def page():
     with open(POSTS) as file:
         data = [json.loads(line) for line in file.read().splitlines()]
         for inlägg in data:
-            inlägg["klartid"] = datetime.fromtimestamp(inlägg["unix"]).isoformat(" ", "seconds")
+            if "unix" in inlägg:
+                inlägg["klartid"] = datetime.fromtimestamp(inlägg["unix"]).isoformat(" ", "seconds")
         return flask.render_template(f"forum.html",
             data=data
         )
@@ -44,4 +45,5 @@ def kaffepress():
     return flask.render_template("kaffepress.html")
 
 if __name__ == "__main__":
+    POSTS = "forum.json"
     app.run(host="127.0.0.1", port=5000)
