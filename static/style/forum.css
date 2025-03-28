@@ -59,10 +59,11 @@
 
 #namnfärg {
 	color: green;
+    margin-bottom: 0;
 }
 
 #klartid {
-	text-align: right;
 	font-size: 20px;
-	color: gray;
+	color: darkblue;
+    margin: 0;
 }

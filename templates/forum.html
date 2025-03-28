@@ -27,10 +27,10 @@
 
 {% for inlägg in data[::-1] %}
 <section>
-<p id="klartid">{{ inlägg.klartid }}</p>
 <h2>{{ inlägg.rubrik }}</h2>
 <p>{{ inlägg.text }}</p>
 <p id="namnfärg">/{{ inlägg.namn }}</p>
+<p id="klartid">{{ inlägg.klartid }}</p>
 </section>
 {% endfor %}
 {% endblock %}
