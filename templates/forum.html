@@ -11,11 +11,11 @@
 <h1>KAFFEFORUM!</h1>
 </header>
 
-<button id="formulärknapp" class="knapp" onclick="clicked()">Skapa inlägg</button>
+<button id="formularknapp" class="knapp" onclick="clicked()">Skapa inlägg</button>
 
 <br>
 
-<form method="post" id="formulär" action="/forum/submit">
+<form method="post" id="mainformular" class="formular" action="/forum/submit">
   <label for="rubrik">Rubrik</label><br>
   <input type="text" id="rubrik" name="rubrik" required maxlength="60"><br>
   <label for="text">Innehåll</label><br>
@@ -26,11 +26,13 @@
 </form>
 
 {% for inlägg in data[::-1] %}
-<section>
+<section id="post-{{ inlägg.id }}">
 <h2>{{ inlägg.rubrik }}</h2>
 <p>{{ inlägg.text }}</p>
-<p id="namnfärg">/{{ inlägg.namn }}</p>
-<p id="klartid">{{ inlägg.klartid }}</p>
+<p class="namnfarg">/{{ inlägg.namn }}</p>
+<p class="klartid">{{ inlägg.klartid }}</p>
+<button class="kommentera knapp" onclick="kommentera({{ inlägg.id }})">Kommentera</button>
+<div class="kommentarsfalt"></div>
 </section>
 {% endfor %}
 {% endblock %}

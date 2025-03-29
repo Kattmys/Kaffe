@@ -41,6 +41,10 @@ def process_form():
         json.dump(posts, file)
     
     return flask.redirect("/forum")
+
+@app.route('/forum/kommentera<id_>', methods=['POST'])
+def kommentera(id_):
+    return flask.redirect("/forum")
  
 @app.route("/forum")
 def page():

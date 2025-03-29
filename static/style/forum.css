@@ -1,8 +1,8 @@
-#formulär {
+#mainformular {
 	display: none;
 }
 
-#formulär input, #formulär textarea, #formulärknapp {
+.formular input, .formular textarea, .knapp {
     /* border-style: solid; */
     /* border-width: 2px; */
     /* border-color: black; */
@@ -11,16 +11,16 @@
     padding: 3px;
 }
 
-#formulär input:focus, #formulär textarea:focus {
+.formular input:focus, .formular textarea:focus {
     outline-style: none;
 }
 
-#formulär input {
+.formular input {
     margin-bottom: 10px;
     color: white;
 }
 
-#formulär label {
+.formular label {
     padding: 2px 4px;
     font-weight: bold;
     border: none;
@@ -29,11 +29,11 @@
     text-shadow: 1px 2px 1px #ddd;
 }
 
-#formulär textarea {
+.formular textarea {
     width: 300px;
 }
 
-#formulär * {
+.formular * {
 	background-color: #c07836;
 	color: lemonchiffon;
     position: relative;
@@ -54,7 +54,7 @@
     background-color: darkgreen;
 }
 
-#formulär, #formulärknapp {
+#mainformular, #formularknapp {
 	position: fixed;
     left: 10px;
 }
@@ -64,13 +64,27 @@
     font-weight: bold;
 }
 
-#namnfärg {
+.namnfarg {
 	color: green;
     margin-bottom: 0;
 }
 
-#klartid {
+.klartid {
 	font-size: 20px;
 	color: darkblue;
     margin: 0;
+}
+
+section {
+    position: relative;
+}
+
+.kommentera {
+    position: absolute;
+    bottom: 13px;
+    right:  13px;
+}
+
+.kommentarsformular {
+    text-align: left;
 }
