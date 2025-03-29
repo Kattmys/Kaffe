@@ -2,10 +2,17 @@
 	display: none;
 }
 
-#formulär *, #formulärknapp {
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+#formulär input, #formulär textarea, #formulärknapp {
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    /* border-color: black; */
+    border: none;
+    box-shadow: 3px 3px 0px black;
+    padding: 3px;
+}
+
+#formulär input:focus, #formulär textarea:focus {
+    outline-style: none;
 }
 
 #formulär input {
