@@ -75,6 +75,7 @@ section {
 	margin: 20px auto;
 	color: lemonchiffon;
 	overflow-wrap: break-word;
+    z-index: -1;
 }
 
 section p {

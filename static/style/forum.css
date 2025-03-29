@@ -78,13 +78,3 @@
 section {
     position: relative;
 }
-
-.kommentera {
-    position: absolute;
-    bottom: 13px;
-    right:  13px;
-}
-
-.kommentarsformular {
-    text-align: left;
-}

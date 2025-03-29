@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %} Forum! {% endblock %}
 {% block head_ext %}
-<script src="static/scripts/forum.js"></script>
+<script src="static/scripts/forum.js" onload="init()"></script>
 <link rel="stylesheet" href="static/style/forum.css">
 {% endblock %}
 {% block content %}
@@ -31,8 +31,6 @@
 <p>{{ inlägg.text }}</p>
 <p class="namnfarg">/{{ inlägg.namn }}</p>
 <p class="klartid">{{ inlägg.klartid }}</p>
-<button class="kommentera knapp" onclick="kommentera({{ inlägg.id }})">Kommentera</button>
-<div class="kommentarsfalt"></div>
 </section>
 {% endfor %}
 {% endblock %}
