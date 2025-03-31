@@ -38,7 +38,7 @@ def process_form():
     }
 
     with open(POSTS, "w") as file:
-        json.dump(posts, file)
+        json.dump(posts, file, indent=0)
     
     return flask.redirect("/forum")
 
