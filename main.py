@@ -15,10 +15,6 @@ app.wsgi_app = ProxyFix(
 @app.route("/")
 def home():
     return flask.render_template("index.html")
-    
-@app.route("/musik")
-def home():
-    return flask.render_template("musik.html")
 
 POSTS = "../Data/Kaffe/forum.json"
 DATA  = "../Data/Kaffe/data.json"
